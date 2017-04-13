@@ -10,10 +10,9 @@ swiffyobject = {"tags":[{"id":1,"bold":true,"glyphs":[{"unicode":"'","data":"mlv
 </script>
 </head>
 <body style="display: table; height: 100%; width: 100%;">
-
-  <div style="display: table-cell; vertical-align: middle; text-align: center;">
-    <script>var stage = new swiffy.Stage(document.body, swiffyobject);</script>
-    <script>stage.start();</script>
+  <div style="display: table-cell; vertical-align: middle; text-align: center;" id="inner">
   </div>
+  <script>var stage = new swiffy.Stage(document.getElementById('inner'), swiffyobject);</script>
+  <script>stage.start();</script>
 </body>
 </html>
